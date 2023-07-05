@@ -16,5 +16,17 @@ namespace ticari_otomasyon
         {
             InitializeComponent();
         }
+
+        FrmUrunler fu;
+
+        private void btnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fu == null)
+            {
+                fu = new FrmUrunler();
+                fu.MdiParent = this;
+                fu.Show();
+            }
+        }
     }
 }
